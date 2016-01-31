@@ -202,7 +202,7 @@ list of one entry otherwise."
 (defvar helm-sources-using-default-as-input)
 (autoload 'helm "helm")
 (autoload 'helm-highlight-current-line "helm-utils")
-(autoload 'helm-build-sync-source "helm-source")
+(autoload 'helm-build-sync-source "helm-core")
 (autoload 'with-helm-current-buffer "helm-lib")
 
 (eval-after-load "helm"
