@@ -99,7 +99,7 @@ the major modes of interest."
   "Return an alist of candidates in the current buffer."
   ;; avoid imenu throwing ugly messages
   (when (or (and imenu-prev-index-position-function
-                 imenu-generic-expression)
+                 imenu-extract-index-name-function)
             (not (eq imenu-create-index-function 'imenu-default-create-index-function)))
     ;; (ignore-errors
     (setq imenu--index-alist nil)
